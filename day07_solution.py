@@ -76,7 +76,7 @@ def traverse_directories(root_directory):
                 directory_delete_size = dir_size
         if curr_dir.children:
             directories.extend(curr_dir.children)
-    print("Total size of directories of at more 100k:", dir_size_lte_100k)
+    print("Total size of directories of at most 100k:", dir_size_lte_100k)
     print("Smallest directory size to delete:", directory_delete_size)
     return dir_size_lte_100k, directory_delete_size
 
